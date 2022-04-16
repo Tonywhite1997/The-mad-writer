@@ -1,0 +1,231 @@
+:root{
+    --body_clr: rgb(210, 194, 206);
+    --header-clr: rgb(209, 67, 171);
+    --text-clr: white;
+    --image-clr: rgb(33, 10, 26);
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    color: var(--text-clr);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--body_clr);
+    overflow-x: hidden;
+}
+header{
+    background: var(--header-clr);
+    height: 10vh;
+    width: 100vw;
+}
+.header-container{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    width: 40%;
+}
+.image{
+    height: 50px;
+    width: 50px;
+    background: var(--image-clr);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    transform: rotate(-20deg);
+    font-size: .9rem;
+    margin-right: .5em;
+}
+.image:hover{
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.title::after{
+    content: "TMW";
+    font-size: .4rem;
+    position: absolute;
+}
+.title:hover{
+    color: rgb(41, 27, 37);
+    transform: rotate(5deg);
+    cursor: pointer;
+}
+.navigation{
+    width: 70%;
+    height: 100%;
+}
+.nav{
+    /* border: 1px solid green; */
+    display: flex;
+    height: 100%;
+}
+.nav li{
+    /* border: 1px solid black; */
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+}
+.nav a:hover{
+    text-decoration: underline;
+    color: rgb(41, 27, 37);
+    
+}
+.books{
+    color: white;
+}
+.extend, .slide-in{
+    color: white;
+    margin-left: .5em;
+    font-size: 1.2rem;
+}
+.slide-in{
+    display: none;
+}
+.books:hover{
+    cursor: pointer;
+    color: black;
+}
+.mini-books{
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    background: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1em;
+    transition: .5s ease-in;
+    top: -50vh;
+    color: black;
+    left: 34%;
+    z-index: -1;
+}
+.mini-books a{
+    color: black;
+}
+.mini-books a:hover{
+    color: var(--header-clr);
+}
+.fas{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        position: relative;
+    }
+    .header-container{
+        width: 100vw;
+    }
+    .logo{
+        width: 100%;
+    }
+    .navigation{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: -100vw;
+        top: 10vh;
+        /* border: 1px solid blue; */
+        background: var(--header-clr);
+        transition: .5s ease-in-out;
+    }
+    .nav{
+        flex-direction: column;
+        line-height: 10px;
+        /* border: 5px solid green; */
+    }
+    .nav li{
+        /* margin-left: 1em; */
+        font-size: 1.2rem;
+        /* border: 1px solid black; */
+        height: 6rem;
+        align-items: flex-start;
+        padding: 1em;
+    }
+    .nav .books{
+        /* border: 1px solid yellow; */
+        height: 12rem;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .books{
+        position: relative;
+    }
+    .mini-books{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -3.5em;
+        left: 20vh;
+        top: 10vh;
+        height: 12rem;
+        z-index: 1;
+        width: 10rem;
+        background: none;
+        padding: 0px;
+        /* border: 1px solid green; */
+    }
+    .mini-books li{
+        font-size: 1rem;
+        height: 30px;
+  
+        padding: 0;
+    }
+    .mini-books li:first-child{
+        height: 30px;
+    }
+    .mini-books a{
+        border-bottom: 3px solid white;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        transform: rotateX(0deg);
+    }
+    .fas{
+        font-size: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: white;
+        display: block;
+        height: 100%;
+        display: flex;
+    }
+    .fa-window-close{
+        display: none;
+    }
+}

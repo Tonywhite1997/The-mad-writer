@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SideBar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <div class="image">TMW</div>
+          <div class="title">The Mad Writer</div>
+        </div>
+        <div class="navigation" id="navigation">
+            <ul class="nav">
+                <li class="books">Books <span class="extend" id="extend">+</span> <span class="slide-in" id="slide-in">-</span>
+                    <ul class="mini-books" id="mini-books">
+                        <li><a href="">Fantasy</a></li>
+                        <li><a href="">Anime</a></li>
+                        <li><a href="">Fictions</a></li>
+                        <li><a href="">Cartoons</a></li>
+                        <li><a href="">Story</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Pricings</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+      </div>
+      <i class="fas fa-bars" id="open-nav"></i>
+      <i class="fas fa-window-close" id="close-nav"></i>
+    </header>
+
+    <script src="app.js"></script>
+  </body>
+</html>
