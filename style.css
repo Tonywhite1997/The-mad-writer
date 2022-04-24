@@ -1,5 +1,5 @@
 :root{
-    --body_clr: rgb(210, 194, 206);
+    --body_clr: rgb(0, 0, 0);
     --header-clr: rgb(209, 67, 171);
     --text-clr: white;
     --image-clr: rgb(33, 10, 26);
@@ -213,14 +213,15 @@ main{
 .footer{
     height: 20vh;
     color: white;
-    background: black;
+    background: var(--header-clr);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .footer-writer{
-    color: var(--header-clr);
+    font-size: 1.2rem;
+    color: black;
     font-weight: 600;
 }
 .rights{
