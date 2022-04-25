@@ -317,9 +317,6 @@ main{
     .title{
         font-size: 1rem;
     }
-    .bookss{
-        flex-direction: column;
-    }
     .mini-books{
         position: absolute;
         display: flex;
