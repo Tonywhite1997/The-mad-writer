@@ -210,6 +210,48 @@ main{
     border-radius: 0;
     transform: rotate(0);
 }
+
+.book-container{
+    color: white;
+    height: 50vh;
+    border-top: 2px solid rgb(202, 181, 185);
+}
+.book-header{
+    text-align: center;
+    color: rgb(255, 131, 218);
+    font-size: 1.2rem;
+}
+.bookss{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+.story{
+    height: 60%;
+    width: 10%;
+    background: linear-gradient(to bottom,
+     var(--header-clr),
+      rgb(90, 35, 65),
+      rgb(177, 139, 145));
+    color: black;
+    box-shadow: 0 0 5px 3px rgb(73, 73, 73);
+    font-size: .8rem;
+    text-align: center;
+}
+.story img{
+    height: 90%;
+    width: 100%;
+}
+.story h3{
+    font-size: clamp(.5rem, 1rem, 2vw);
+}
+
+.story:hover{
+    transform:skewY(5deg);
+    transition: transform 500ms ease-in-out;
+}
 .footer{
     height: 20vh;
     color: white;
@@ -274,6 +316,9 @@ main{
     }
     .title{
         font-size: 1rem;
+    }
+    .bookss{
+        flex-direction: column;
     }
     .books{
         position: relative;
