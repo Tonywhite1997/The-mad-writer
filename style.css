@@ -320,9 +320,6 @@ main{
     .bookss{
         flex-direction: column;
     }
-    .books{
-        position: relative;
-    }
     .mini-books{
         position: absolute;
         display: flex;
