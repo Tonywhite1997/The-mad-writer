@@ -1,5 +1,5 @@
 :root{
-    --body_clr: rgb(0, 0, 0);
+    --body_clr: rgb(255, 255, 255);
     --header-clr: rgb(209, 67, 171);
     --text-clr: white;
     --image-clr: rgb(33, 10, 26);
@@ -213,24 +213,27 @@ main{
 
 .book-container{
     color: white;
-    height: 50vh;
+    min-height: 50vh;
     border-top: 2px solid rgb(202, 181, 185);
 }
 .book-header{
     text-align: center;
-    color: rgb(255, 131, 218);
+    color:rgb(255, 91, 247);
     font-size: 1.2rem;
+    margin-bottom: 2em;
 }
 .bookss{
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: var(--body_clr);
 }
 .story{
-    height: 60%;
-    width: 10%;
+    height: 250px;
+    width: 200px;
+    margin: 0 1em 1em 0;
     background: linear-gradient(to bottom,
      var(--header-clr),
       rgb(90, 35, 65),
@@ -240,6 +243,11 @@ main{
     font-size: .8rem;
     text-align: center;
 }
+
+/* .book-1{
+    margin-left: 1em;
+} */
+
 .story img{
     height: 90%;
     width: 100%;
@@ -316,9 +324,6 @@ main{
     }
     .title{
         font-size: 1rem;
-    }
-    .bookss{
-        flex-direction: column;
     }
     .books{
         position: relative;
