@@ -325,9 +325,12 @@ main{
     .title{
         font-size: 1rem;
     }
+<<<<<<< HEAD
     .books{
         position: relative;
     }
+=======
+>>>>>>> 83b29450335c0892303eb12146694301818d518a
     .mini-books{
         position: absolute;
         display: flex;
